@@ -306,7 +306,7 @@ bool Player::displayInvent(char key, string& str)   //If a 'w', 'r' or 'i' is cl
                             if (m_inventory[i]->symbol() == '*')
                                 count++;
                         }
-                        if (count == 2)
+                        if (count >= 2)
                         {
                             clearScreen();
                             cout << endl;
@@ -330,7 +330,7 @@ bool Player::displayInvent(char key, string& str)   //If a 'w', 'r' or 'i' is cl
                                 num++;
                             
                         }
-                        if (num == 2)
+                        if (num >= 2)
                         {
                             clearScreen();
                             cout << endl;

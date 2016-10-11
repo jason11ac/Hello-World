@@ -1,9 +1,5 @@
-# Hello-World
-Dungeon game created for a college course
 
-
-
-Project 3 Report (Minirogue)
+Minirogue Report
 
 
 •	How to play:
@@ -153,9 +149,6 @@ o	Cheats (MUHAHAHA)
 •	Guide to the Further (cheat for secret levels)
 •	Pressing ‘$’ will bring up a prompt asking which level you want to teleport to. This gives you access to the secret levels beyond level 5. Secret levels get extremely hard and go up to around 600. 
 
-
-•	My goblin movement function is not recursive. I was not able to successfully implement a recursive goblin search function that ran fast enough and flawlessly enough. 
-
 •	Program Design: 
 o	Actor Class:
 •	My Actor class has all the functions that deal with the actors, which include all the monsters and the player. This class includes object and dungeon pointers, the move function, the attack function, the drop object function, the move monster function and many other small functions that deal with actors in the game. The Actor class is a base class with 6 derived classes. Each derived class is a different actor, including the player and 5 different monsters. 
@@ -183,9 +176,3 @@ o	Bool Dungeon::makeRoom(int &row, int &col)
 •	Create x and y dimensions and row and col spots for the room. Iterate through the room dimensions and see if the rooms fit. If they fit, make the rooms by making the characters at those spots ‘ ‘. Increment the number of rooms added and repeat until all the rooms are added. 
 o	Void Dungeon::make()
 •	While there aren’t enough rooms in the dungeon, make a room by calling the makeRoom function. If the most recent room fit and there are more than one room made, make a corridor between the rooms by using the coordinates of the previous and most recent rooms. Once all the rooms have been made, add the objects and add the monsters to the dungeon level. If this is the last level, place the idol, if not, place the stairs. 
-	
-
-
-•	Known Bugs
-o	Did not implement the recursive goblin search
-	
